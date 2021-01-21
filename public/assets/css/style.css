@@ -1,0 +1,10 @@
+.main{
+    margin: 10vh 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.main a{
+    text-decoration: none;
+}
