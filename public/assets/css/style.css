@@ -22,8 +22,9 @@ nav{
     align-items: center;
     width: 70%;
     margin-left: 10%;
+    height: 10vh;
 }
- #input{
+#input{
     background: #333333;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
@@ -35,8 +36,8 @@ nav{
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 32%;
-    top: 20px;
+    left: 31%;
+    top: 30px;
     opacity: 0.6;
     margin: 12px 0px;
 }
@@ -140,7 +141,7 @@ list-style: none;
     position: absolute;
     background: #fff;
     height: 100px;
-    top: 65vh;
+    top: 58vh;
     right: 0;
     width: 120px;
     border-top-left-radius: 50px;
@@ -194,6 +195,13 @@ list-style: none;
     margin: 5vh 0 2vh;
     font-size: 1.4rem;
 }
+.favourite h4{
+    text-align:left;
+   text-overflow: ellipsis;
+  
+}
+
+
 .text p{
     width: 60%;
     color: #ccc;
@@ -202,4 +210,5 @@ list-style: none;
     color: #12153D;
     font-size: .9rem;
     font-weight: 400;
+    
 }

@@ -21,7 +21,7 @@ mongoose.connect(process.env.dbUri, { useNewUrlParser: true, useUnifiedTopology:
 
     app.get('/', (req, res) => {  
 
-        fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=f9c8e3bf33252c8c1179e8b6ca4946f1')
+        fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=f9c8e3bf33252c8c1179e8b6ca4946f1&page=1')
     .then(res => res.json())
     .then((json)=>{
         //  console.log(json) 
@@ -91,16 +91,6 @@ mongoose.connect(process.env.dbUri, { useNewUrlParser: true, useUnifiedTopology:
                 .catch(err => console.log(err))
         })
 
-
-
-    //           app.get("/favourites", (req, res) => {
-    //     movie.find()
-    //         .then(result => {
-    //             res.render('favourites', { Movies: result })
-    //         })
-    //         .catch(err => console.log(err))
-    // })
-
 app.get('/removeFavourite/:id',(req,res)=>{
     movie.findById(req.params.id)
     .then(result =>{
@@ -118,6 +108,3 @@ app.get("/removefavourite/:id/delete", (req, res) => {
         })
         .catch(err => console.log(err))
 })
-
-
-    // https://api.themoviedb.org/3/movie/week?api_key=f9c8e3bf33252c8c1179e8b6ca4946f1

@@ -6,10 +6,11 @@
             <img src="https://image.tmdb.org/t/p/w500<%= ele.poster_path %> " alt="">
             <h3><%= ele.title%> </h3>
         </a>
-        <p><%= ele.overview %> </p>
     </article>
     <% }) %>
 </section>
+
+<button onClick="scroll(0, 100);">Klicken, um 100 Pixel nach unten zu scrollen</button>
 
 <%- include('./partials/footer') %> 
 
