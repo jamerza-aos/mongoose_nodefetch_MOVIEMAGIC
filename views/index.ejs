@@ -1,13 +1,8 @@
 <%- include('./partials/header') %> 
-
-
-<h1>home</h1>
-
 <section class="main">
     <% allmoviedata.forEach(ele => { %>
     <article>
         <a href="/details/<%= ele.id %>">
-            <!-- muss fragen -->
             <img src="https://image.tmdb.org/t/p/w500<%= ele.poster_path %> " alt="">
             <h3><%= ele.title%> </h3>
         </a>
