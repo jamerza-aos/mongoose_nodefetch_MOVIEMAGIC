@@ -1,14 +1,8 @@
 <%- include('./partials/header') %> 
-
-
-
-
-
-
-<h1>MySHOWS</h1>
+<h1 id="show">MySHOWS</h1>
 <section class="main">
-    <% Movies.forEach(element => { %>
-    <article>
+    <% myMovies.forEach(element => { %>
+    <article class="favourite">
       
             <img src="https://image.tmdb.org/t/p/w500<%= element.poster_path %> " alt="">
             <h3><%= element.title%> </h3>
@@ -17,10 +11,4 @@
     </article>
     <% }) %>
 </section>
-
-
-
-
-
-
 <%- include('./partials/footer') %>

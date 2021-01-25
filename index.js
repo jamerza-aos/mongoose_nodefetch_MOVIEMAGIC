@@ -83,10 +83,6 @@ mongoose.connect(process.env.dbUri, { useNewUrlParser: true, useUnifiedTopology:
                         })
                 })            
 
-
-
-      
-        
         app.get("/favourites", (req, res) => {
             movie.find()
                 .then(result => {
@@ -97,13 +93,13 @@ mongoose.connect(process.env.dbUri, { useNewUrlParser: true, useUnifiedTopology:
 
 
 
-              app.get("/favourites", (req, res) => {
-        movie.find()
-            .then(result => {
-                res.render('favourites', { Movies: result })
-            })
-            .catch(err => console.log(err))
-    })
+    //           app.get("/favourites", (req, res) => {
+    //     movie.find()
+    //         .then(result => {
+    //             res.render('favourites', { Movies: result })
+    //         })
+    //         .catch(err => console.log(err))
+    // })
 
 app.get('/removeFavourite/:id',(req,res)=>{
     movie.findById(req.params.id)
